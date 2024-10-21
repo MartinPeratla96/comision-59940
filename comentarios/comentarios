@@ -1,0 +1,42 @@
+/* ahora vamos a la terminal para generar un repositorio dentro del mismo
+
+abrimos gitbush.
+
+cd "change directory"  nos posiciona sobre la carpeta  
+
+"cd" arrastramos la carpeta al comando y antes de arrancar chequear el codigo en amarillo si estamos parados sobre la carpeta raiz.
+
+"git init" inicia un nuevo repositorio dentro del proyecto.
+
+"ls -a" nos crea una nueva carpeta llamada .git donde se van alojar todas las versiones que creamos de nuestro proyecto.
+
+"git status" veo el estado del proyecto. si los archivos estan en rojo quiere decir que esta en el estado de git en el primer estado: working directory.
+
+si quiero pasar todo al segundo estado de git usamos el comando "git add nombre de la carpecha y el archivo" o "git add ." enter y automaticamente todo esos aruchivos se ponen en verde.
+
+si quiero revisar que este en verde o en segundo estado, pongo "git status". esto nos dice que ya estamos en el stagin area. la particularidad que tiene el staging que se podia seguir sumando info o quitar.
+
+si queremos sacar info del stagin area usamos el comando "git rm --cached (nombre del archivo)".
+para revisar que estamos sacando informacion usamos "git status" tambien, esta en el working directory.
+
+si quiero agregar un commit al proyecto, uso el siguiente comando "git commit -m "comentario del proyecto".
+y manda todo un detalle con un numero url, con la cantidad de archivos que hay en el commit creado. 
+con "git log" me da todo la informacion de quien fue el autor, la fecha de la creacion con la hora. medio buchon este comando.
+aca ya tengo una version del proyecto creado.
+
+git es ciclico, arrancamos del working, pasamos al staging, pasamos al repository. y cuando hacemos una nueva modifciacion en visual studio. en la consola pongo git status, me avisa que hay modifcaciones en el index.
+
+-------- AHORA VIENE EL TEMA DE LAS RAMAS --------
+
+las ramas nos permite trabajar sobre el proyecto main donde usamos versiones para trabajar sin alterar el original. 
+
+"git branch" nos dice que ramas tenemos dentro de nuestro proyecto. 
+
+"git branch palabra-palabra-etc" nos devuelve la ruta de la carpeta.
+pero si despues le ponemos "git branch" ya nos crea una rama secundaria del proyecto.
+
+
+
+
+
+*/
