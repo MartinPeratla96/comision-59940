@@ -34,9 +34,16 @@ las ramas nos permite trabajar sobre el proyecto main donde usamos versiones par
 
 "git branch palabra-palabra-etc" nos devuelve la ruta de la carpeta.
 pero si despues le ponemos "git branch" ya nos crea una rama secundaria del proyecto.
+la rama secundaria tiene una copia exacta del proyecto que empezamos en virtual studio.
 
+con el comando 'git checkout palabra-palabra-etc´ nos permite movernos entre ramas. dice que te moviste a la rama tal. en este proyecto dice que mi-ramita-prueba y no main. una vez cambiado de rama en la parte inferior izquierda dice en que parte de la rama estamos del proyecto.
+esta rama tiene los mismos estados que la rama original. osea va tener su tres estados propios. 
+en este caso cualquier modificacion que le haga al visual studio code parado sobre la rama que creamos, al pedirle status al comando, va estar en su primer estado en color rojos los archivos y para pasarlo al segundo estado se pone ´git add .´
 
+para guardar los cambios en la rama, ponemos ´git commit -m "comentario"' y despues "git log" para ver el historial de lo que se guardo en el main y lo que vamos guardando en la rama creada.
 
+si vuelvo al proyecto main, pongo "git checkout + nombre de la rama" me hace mover entre ramas, en visual studio code aparece solo lo que estaba al inicio, el segundo section con el h2 desaparece.
+de esta manera me permite hacer modificaciones en la nueva version con la rama creada sin alterar el original.
 
-
+si quiero funcionar ramas de la original con la secundaria, uso el comando "git merge + el nombre de la rama". me permite agarrar y combinar ramas. Pero para eso nos posicionamos siempre en la rama que va recibir los cambios, 
 */
